@@ -45,7 +45,7 @@ export async function GET(request: Request){
             success: true,
             message: 'Username is Unique'
         }, {status:400})
-
+        
     } catch (error) {
         console.error("Error checking username", error)
         return Response.json(
